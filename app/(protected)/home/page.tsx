@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 
-const BrandingHome = () => {
+const BrandingHomePage = () => {
   return (
     <div>
       <div className="w-full h-220 bg-brand-black/40 bg-[url('/images/holding-hands.jpg')] bg-cover bg-center bg-no-repeat bg-blend-overlay">
-        Home
+        <Navbar />
       </div>
     </div>
   )
 }
 
-export default BrandingHome
+export default BrandingHomePage
