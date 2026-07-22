@@ -27,7 +27,7 @@ export default function RootLayout({
       lang="en"
       className={`${aleo.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-brand-white">{children}</body>
+      <body className="w-screen min-h-full flex flex-col bg-brand-white overflow-x-hidden">{children}</body>
     </html>
   );
 }
