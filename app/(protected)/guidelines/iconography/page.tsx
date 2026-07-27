@@ -1,9 +1,9 @@
 import React from 'react'
 
-const FoundationGuidelines = () => {
+const IconographyGuidelines = () => {
   return (
     <div>FoundationSection</div>
   )
 }
 
-export default FoundationGuidelines
+export default IconographyGuidelines

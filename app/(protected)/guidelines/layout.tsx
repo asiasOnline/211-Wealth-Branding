@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Sidebar from "@/components/Sidebar" 
+import Footer from "@/components/Footer"
 
 export default function GuidelineLayout({
   children,
@@ -13,6 +14,7 @@ export default function GuidelineLayout({
         <Sidebar />
         {children}
       </main>
+      <Footer />
     </>
   )
 }

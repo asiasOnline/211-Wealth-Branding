@@ -20,6 +20,7 @@ const Navbar = ({variant = 'dark'}: NavbarProps) => {
     {name: "Assets", href:"/assets"},
     {name: "Support", href:"/support"}
   ];
+  
   const isLight = variant === 'light'
 
   return (
