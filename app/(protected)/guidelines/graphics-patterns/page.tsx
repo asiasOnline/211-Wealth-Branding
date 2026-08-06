@@ -2,7 +2,9 @@ import React from 'react'
 
 const GraphicsPatternsGuidelines = () => {
   return (
-    <div>FoundationSection</div>
+    <div>
+      <h1>Graphics & Patterns</h1>
+    </div>
   )
 }
 

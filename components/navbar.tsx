@@ -1,11 +1,10 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FiMenu } from "react-icons/fi";
-import { FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 type NavbarProps = {
   variant?: 'light' | 'dark'
@@ -22,6 +21,18 @@ const Navbar = ({variant = 'dark'}: NavbarProps) => {
   ];
   
   const isLight = variant === 'light'
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
 
   return (
     <nav className='w-full relative flex items-center justify-between pl-4 md:pl-10 pr-10 md:pr-20 py-4 md:py-6'>
@@ -87,7 +98,7 @@ const Navbar = ({variant = 'dark'}: NavbarProps) => {
         <div className={`md:hidden 
         
           ${isOpen 
-          ? "w-screen h-screen z-20 absolute top-0 right-0" 
+          ? "w-screen h-screen z-20 fixed top-0 left-0 overflow-hidden" 
           : "hidden"}
         
           ${isLight
@@ -96,7 +107,7 @@ const Navbar = ({variant = 'dark'}: NavbarProps) => {
           }`
         }
           >
-          <div className='h-full flex items-center'>
+          <div className='h-full flex items-center px-8'>
             <div>
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href;
@@ -105,11 +116,12 @@ const Navbar = ({variant = 'dark'}: NavbarProps) => {
                   <Link
                     key={link.name}
                     href={link.href}
+                    onClick={() => setIsOpen(false)}
                     className={`block p-4
                       ${
                         isActive 
                         ? 'underline' 
-                        : 'hover:font-semibold'
+                        : ''
                         }
 
                         ${isLight

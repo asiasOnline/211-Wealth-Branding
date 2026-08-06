@@ -2,7 +2,9 @@ import React from 'react'
 
 const PhotographyGuidelines = () => {
   return (
-    <div>FoundationSection</div>
+    <div>
+      <h1>Photography</h1>
+    </div>
   )
 }
 

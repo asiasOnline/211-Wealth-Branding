@@ -2,7 +2,9 @@ import React from 'react'
 
 const IconographyGuidelines = () => {
   return (
-    <div>FoundationSection</div>
+    <div>
+      <h1>Iconography</h1>
+    </div>
   )
 }
 

@@ -10,9 +10,11 @@ export default function GuidelineLayout({
   return (
     <>
       <Navbar variant="dark" />
-      <main className="flex">
+      <main className="flex lg:gap-8 px-8 lg:px-24 mb-8 lg:mb-20 text-brand-black">
         <Sidebar />
-        {children}
+        <div className="max-w-280">
+          {children}
+        </div>
       </main>
       <Footer />
     </>
