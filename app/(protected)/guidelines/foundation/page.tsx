@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
 import DropDownSection from '@/components/DropDownSection'
 import {
   Tabs,
@@ -8,6 +10,7 @@ import {
 } from "@/components/ui/tabs"
 import { Button } from '@/components/ui/button';
 import { HiOutlineUserGroup } from "react-icons/hi2";
+import { FiDownload } from "react-icons/fi";
 import { PiHeart, PiHandsPraying, PiShieldCheckered  } from "react-icons/pi";
 
 const FoundationGuidelines = () => {
@@ -180,7 +183,7 @@ const FoundationGuidelines = () => {
           <h2>Audience</h2>
           <p className='pt-4'>211 Wealth serves a network of three interconnected audiences, with each playing a distinct role in the organization’s ability to fulfill its mission. Below are the three defined audience segments complete with personas to help associate each group with a human being that the organization will often engage with. Grounding the brand’s messaging and decision making to the people these personas represent will help to make informed and intentional decisions.</p>
           <Tabs>
-            <TabsList>
+            <TabsList className='gap-4'>
               <TabsTrigger value="primaryBeneficiaries">
                 Primary Beneficiaries
               </TabsTrigger>
@@ -192,13 +195,58 @@ const FoundationGuidelines = () => {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="primaryBeneficiaries">
-              <p>Represented by Maria, this segment embodies the women and families that 211 Wealth seeks to directly serve. The age range of this group primarily lies between 25 to 45, and they’re often navigating a variety of interconnected challenges such as housing instability, domestic violence, unemployment, and food insecurity. As such, they need support provided with dignity rather than judgement and an emphasis on communication that’s clear, accessible, and warm.</p>
+              <p className='mb-4'>Represented by Maria, this segment embodies the women and families that 211 Wealth seeks to directly serve. The age range of this group primarily lies between 25 to 45, and they’re often navigating a variety of interconnected challenges such as housing instability, domestic violence, unemployment, and food insecurity. As such, they need support provided with dignity rather than judgement and an emphasis on communication that’s clear, accessible, and warm.</p>
+              <Button variant='outline'>
+                <Link href="/personas/211-Wealth-User-Persona-Recipient-Segment.pdf"
+                className='flex gap-2'
+                >
+                  Download Persona
+                  <FiDownload />
+                </Link>
+              </Button>
+              <Image 
+                src="/personas/211-Wealth-User-Persona-Recipient-Segment.png"
+                alt='211 Wealth User Persona - Recipent'
+                width={1920}
+                height={1080}
+                className='border border-brand-black rounded-lg mt-4'
+              />
             </TabsContent>
             <TabsContent value="individualDonors">
-
+              <p className='mb-4'>Represented by Patricia, this segment embodies the individuals motivated to support 211 Wealth and the causes they serve. The age range of this group primarily lies between 45 to 65. They’re typically middle to upper-middle class professionals, business owners, or retirees. Individuals apart of this group become ambassadors, volunteers, and board members providing access to connect other resources helping to build the brand's recognition and a supportive community.</p>
+              <Button variant='outline'>
+                <Link href="/personas/211-Wealth-User-Persona-Doner-Segment.pdf"
+                className='flex gap-2'
+                >
+                  Download Persona
+                  <FiDownload />
+                </Link>
+              </Button>
+              <Image 
+                  src="/personas/211-Wealth-User-Persona-Doner-Segment.png"
+                  alt='211 Wealth User Persona - Recipent'
+                  width={1920}
+                  height={1080}
+                  className='border border-brand-black rounded-lg mt-4'
+                />
             </TabsContent>
             <TabsContent value="communityOrganizers">
-
+              <p className='mb-4'>Represented by Carmen, this segment embodies the community professionals such as the social workers, case managers, counselors, educators, etc. The age of this group has the widest range lying between 25 to 65 and working in a variety of sectors including healthcare, faith communities, law enforcement, etc. Referral partners and community organizers within this segment help identify the individuals who need 211 Wealth's services and act as the connecting force vouching for the organization's credibility and helping clients through the access process. </p>
+              <Button variant='outline'>
+                <Link href="/personas/211-Wealth-User-Persona-Social-Worker-Segment.pdf"
+                className='flex gap-2'
+                >
+                  Download Persona
+                  <FiDownload />
+                </Link>
+              </Button>
+              <Image 
+                src="/personas/211-Wealth-User-Persona-Social-Worker-Segment.png"
+                alt='211 Wealth User Persona - Recipent'
+                width={1920}
+                height={1080}
+                className='border border-brand-black rounded-lg mt-4'
+              />
             </TabsContent>
           </Tabs>
       </div>

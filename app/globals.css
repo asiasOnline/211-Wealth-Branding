@@ -184,6 +184,10 @@
 
 @layer components {
   .section-divider {
+    color: var(--color-brand-grey-600);
+  }
+
+  .sub-section-divider {
     color: var(--color-brand-grey-500);
   }
 }
