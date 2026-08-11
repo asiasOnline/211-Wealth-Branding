@@ -16,12 +16,13 @@ const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
         <div className='flex items-center gap-2'>
-            <p className='text-xl font-bold'>{heading}</p>
+            
             <button
-                className={`[&_svg]:size-5`}
+                className={`flex items-center gap-2 [&_svg]:size-5 hover:cursor-pointer`}
                 aria-label='menu'
                 onClick={() => setIsOpen(!isOpen)}
                 >
+                <span className='text-xl font-bold'>{heading}</span>
                 {isOpen 
                 ? <LuChevronDown size={24}/> 
                 : <LuChevronRight size={24}/>}

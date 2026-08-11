@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import DropDownSection from '@/components/DropDownSection'
+import { BsXCircle } from "react-icons/bs";
 
 const LogotypesGuidelines = () => {
   return (
@@ -117,51 +118,51 @@ const LogotypesGuidelines = () => {
                 <div className='flex gap-4'>
                   <div className='bg-white flex border rounded'>
                     <Image 
-                      src='/logos/211-Wealth-primary-color-logo-png.png'
-                      alt='211 Wealth Primary Logo - Color Variant'
-                      width={200}
-                      height={200}
+                      src='/logos/211-Wealth-vertical-wordmark-color-logo-png.png'
+                      alt='211 Wealth Vertical Wordmark Logo - Color Variant'
+                      width={233}
+                      height={140}
                     />
                     <Image 
-                      src='/logos/211-Wealth-primary-black-logo-png.png'
+                      src='/logos/211-Wealth-vertical-wordmark-black-logo-png.png'
                       alt='211 Wealth Primary Logo - Black Variant'
-                      width={200}
-                      height={200}
+                      width={233}
+                      height={140}
                     />
                   </div>
                   <div className='bg-brand-black rounded'>
                     <Image 
-                      src='/logos/211-Wealth-primary-white-logo-png.png'
+                      src='/logos/211-Wealth-vertical-wordmark-white-logo-png.png'
                       alt='211 Wealth Primary Logo - White Variant'
-                      width={200}
-                      height={200}
+                      width={233}
+                      height={140}
                     />
                   </div>
                 </div>
               </DropDownSection>
               <DropDownSection heading='5. Submark Logo'>
-                <p>The entirety of the logo icon (both tree and roots)  paired with an integrated, fully horizontal version of the wordmark. </p>
+                <p>A minimized version of the logo icon (branch) with no wordmark.</p>
                 <div className='flex gap-4'>
                   <div className='bg-white flex border rounded'>
                     <Image 
-                      src='/logos/211-Wealth-primary-color-logo-png.png'
+                      src='/logos/211-Wealth-submark-color-logo-png.png'
                       alt='211 Wealth Primary Logo - Color Variant'
-                      width={200}
-                      height={200}
+                      width={120}
+                      height={120}
                     />
                     <Image 
-                      src='/logos/211-Wealth-primary-black-logo-png.png'
+                      src='/logos/211-Wealth-submark-black-logo-png.png'
                       alt='211 Wealth Primary Logo - Black Variant'
-                      width={200}
-                      height={200}
+                      width={120}
+                      height={120}
                     />
                   </div>
                   <div className='bg-brand-black rounded'>
                     <Image 
-                      src='/logos/211-Wealth-primary-white-logo-png.png'
+                      src='/logos/211-Wealth-submark-white-logo-png.png'
                       alt='211 Wealth Primary Logo - White Variant'
-                      width={200}
-                      height={200}
+                      width={120}
+                      height={120}
                     />
                   </div>
                 </div>
@@ -171,13 +172,167 @@ const LogotypesGuidelines = () => {
           <hr className='sub-section-divider my-6'/>
           <div id='logo-spacing'>
             <h3>Logo Spacing</h3>
-            <p>All logo variants required a certain amount of clear space surrounding the logo to ensure there is no competition for attention.</p>
+            <p className='py-4'>All logo variants required a certain amount of clear space surrounding the logo to ensure there is no competition for attention.</p>
+            <Image 
+                src="/logo-examples/logo-spacing-example.png"
+                alt='Logo Spacing Example'
+                className='bg-white border rounded'
+                width={900}
+                height={428}
+              />
           </div>
         </div>
         <hr className='section-divider my-8'/>
         <div id='logo-usage-guidelines'>
-            <h2>Logo Usage Guidelines</h2>
+          <h2>Logo Usage Guidelines</h2>
+          <div className='flex flex-col gap-4'>
+            <div id='logo-background-rule'>
+              <div className='flex items-center gap-4 mt-8 mb-4'>
+                <BsXCircle className='w-6 h-6'/>
+                <p>Logos should NOT be used on backgrounds with patterns or non-neutral background colors. </p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Image 
+                  src='/logo-examples/logo-background-rule-example1.png'
+                  alt='Logo Background Rule 1'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-background-rule-example2.png'
+                  alt='Logo Background Rule 2'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-background-rule-example3.png'
+                  alt='Logo Background Rule 3'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+              </div>
+            </div>
+            <div id='logo-color-rule'>
+              <div className='flex items-center gap-4 mt-8 mb-4'>
+                <BsXCircle className='w-6 h-6'/>
+                <p>Avoid changing the color of any logo variations or any of its individual elements.</p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Image 
+                  src='/logo-examples/logo-color-rule-example1.png'
+                  alt='Logo Color Rule 1'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-color-rule-example2.png'
+                  alt='Logo Color Rule 2'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-color-rule-example3.png'
+                  alt='Logo Color Rule 3'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+              </div>
+            </div>
+            <div id='logo-spacing-rule'>
+              <div className='flex items-center gap-4 mt-8 mb-4'>
+                <BsXCircle className='w-6 h-6'/>
+                <p>Maintain the defined spacing for all logo variations.</p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Image 
+                  src='/logo-examples/logo-spacing-rule-example1.png'
+                  alt='Logo Spacing Rule 1'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-spacing-rule-example2.png'
+                  alt='Logo Spacing Rule 2'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-spacing-rule-example3.png'
+                  alt='Logo Spacing Rule 3'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+              </div>
+            </div>
+            <div id='logo-sizing-rule'>
+              <div className='flex items-center gap-4 mt-8 mb-4'>
+                <BsXCircle className='w-6 h-6'/>
+                <p>Avoid making the logo too small or large.</p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Image 
+                  src='/logo-examples/logo-sizing-rule-example1.png'
+                  alt='Logo Sizing Rule 1'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-sizing-rule-example2.png'
+                  alt='Logo Sizing Rule 2'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-sizing-rule-example3.png'
+                  alt='Logo Sizing Rule 3'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+              </div>
+            </div>
+            <div id='logo-alter-rule'>
+              <div className='flex items-center gap-4 mt-8 mb-4'>
+                <BsXCircle className='w-6 h-6'/>
+                <p>Avoid distorting or altering the logo.</p>
+              </div>
+              <div className='flex items-center gap-4'>
+                <Image 
+                  src='/logo-examples/logo-alter-rule-example1.png'
+                  alt='Logo Alter Rule 1'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-alter-rule-example2.png'
+                  alt='Logo Alter Rule 2'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+                <Image 
+                  src='/logo-examples/logo-alter-rule-example3.png'
+                  alt='Logo Alter Rule 3'
+                  width={300}
+                  height={84}
+                  className='border rounded'
+                />
+              </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   )
