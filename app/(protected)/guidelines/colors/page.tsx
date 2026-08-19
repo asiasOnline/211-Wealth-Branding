@@ -88,12 +88,69 @@ const ColorsGuidelines = () => {
       <div id='color-combinations'>
         <h2>Color Combinations</h2>
         <p>Below is a collection of suggested color combinations for layouts. These colors not only work well when paired with one another but they are also accessible and provide proper contrast.</p>
-        <div>
-          <p className='text-sm'>Porcelain White / Coffee Black</p>
-          <Image 
-            src='/color-combinations/white-black-combo.png'
-            alt='Color Swatch of Coffee Black on Porcelain White'
-          />
+        <div className='flex gap-8 mt-4'>
+          <div>
+            <p className='text-sm pb-2'>Porcelain White / Coffee Black</p>
+            <Image 
+              src='/color-combinations/white-black-combo.png'
+              alt='Color Swatch of Coffee Black on Porcelain White'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
+          <div>
+            <p className='text-sm pb-2'>Porcelain White / Sage Green 700</p>
+            <Image 
+              src='/color-combinations/white-darkGreen-combo.png'
+              alt='Color Swatch of Sage Green 700 on Porcelain White'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
+          <div>
+            <p className='text-sm pb-2'>Porcelain White / Orange 600</p>
+            <Image 
+              src='/color-combinations/white-darkOrange-combo.png'
+              alt='Color Swatch of Orange 600 on Porcelain White'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
+        </div>
+        <div className='flex gap-8 mt-8'>
+          <div>
+            <p className='text-sm pb-2'>Sage Green 800 / Sage Green 200</p>
+            <Image 
+              src='/color-combinations/darkGreen-lightGreen-combo.png'
+              alt='Color Swatch of Sage Green 200 on Sage Green 800'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
+          <div>
+            <p className='text-sm pb-2'>Coffee Black / Sage Green 200</p>
+            <Image 
+              src='/color-combinations/black-lightGreen-combo.png'
+              alt='Color Swatch of Sage Green 200 on Coffee Black'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
+          <div>
+            <p className='text-sm pb-2'>Coffee Bean Black / Orange 300</p>
+            <Image 
+              src='/color-combinations/black-lightOrange-combo.png'
+              alt='Color Swatch of Orange 300 on Coffee Black'
+              width={300}
+              height={189}
+              className='border rounded'
+            />
+          </div>
         </div>
       </div>
     </div>

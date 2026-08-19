@@ -19,7 +19,7 @@ const Sidebar = () => {
   ]
 
   return (
-    <div className='hidden md:flex flex-col gap-8 w-1/4 max-w-60 h-fit p-4 mx-8 rounded-lg bg-brand-primary-green-100'>
+    <div className='hidden md:flex flex-col sticky top-12 gap-8 w-1/4 max-w-60 h-fit p-4 mx-8 rounded-lg bg-brand-primary-green-100'>
       {subLinks.map((link) => {
             const isActive = pathname === link.href;
 

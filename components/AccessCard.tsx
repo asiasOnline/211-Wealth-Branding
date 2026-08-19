@@ -55,9 +55,9 @@ const AccessCard = () => {
                   variant='ghost'
                 >
                   {showPassword ? (
-                    <FaRegEyeSlash className='h-4 w-4 text-muted-foreground' />
+                    <FaRegEye className='h-4 w-4 text-muted-foreground' />
                   ) : (
-                    <FaRegEye className='h-4 w-4 text-muted-foreground'/>
+                    <FaRegEyeSlash className='h-4 w-4 text-muted-foreground'/>
                   )}
                 </Button>
               </div>
